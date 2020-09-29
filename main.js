@@ -59,7 +59,10 @@ button.addEventListener( "click" , () => {
             method: 'POST',
             body: new FormData(form)
         })
-            .then(response => console.log("Resonse: ", response.json))
+            .then(response => {
+                textResult.innerHTML = 'Сообщение отправлено'
+                form.reset()
+            })
             .catch(error => console.error(error))
 
     }
