@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.main-form{
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 120px;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    background: rgba(0,0,0,0);
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: #ffffff;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+input[type="button"] {
+    background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer
+}
+
+.error {
+    position: relative;
+    top: -5px;
+    color: #ff7e7e;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder { color: #fff; }
+input:-ms-input-placeholder,textarea:-ms-input-placeholder { color: #fff; }
+input::-ms-input-placeholder,textarea::-ms-input-placeholder { color: #fff; }
+input::placeholder,textarea::placeholder { color: #fff; } 
+
